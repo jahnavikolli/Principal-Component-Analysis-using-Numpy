@@ -13,27 +13,22 @@ This course is divided into 3 parts:
 
 # The hands on project on Principal Component Analysis with NumPyis divided into following tasks:
 
-**Task 1: Introduction and Project Overview**
-
-1. Introduction to the data set and the problem overview.
-2. See a demo of the final product you will build by the end of this project.
-3. Introduction to the Rhyme interface.
 
 
-**Task 2: Load the Data and Import Libraries**
+**Task 1: Load the Data and Import Libraries**
 
 1. Load the dataset using pandas.
 2. Import essential modules and helper functions from NumPy and Matplotlib.
 3. Explore the pandas dataframe using the head() and info() functions.
 
 
-**Task 3: Visualize the Data**
+**Task 2: Visualize the Data**
 
 1. Before starting on any task, it is often useful to understand the data by visualizing it.
 2. For this dataset, we can use a scatter plot using Seaborn to visualize the data.
 
 
-**Task 4: Data Standardization**
+**Task 3: Data Standardization**
 
 1. With great power to reduce dimensionality, comes great responsibility.
 One must take care to preprocess the input data appropriately.
@@ -43,7 +38,7 @@ One must take care to preprocess the input data appropriately.
 5. If one or more features are in a different scale than the rest, those non-standardized features will dominate the eigenvalues and give you an incorrect result This is a direct consequence of how PCA works. It is going to project our data into directions that maximize the variance along the axes. 
 
 
-**Task 5: Compute the Eigenvectors and Eigenvalues**
+**Task 4: Compute the Eigenvectors and Eigenvalues**
 
 1. There are two general ways to perform PCA. The more computationally effective way is to do something called Singular Value Decomposition or SVD.
 2. It decomposes a matrix into the product of two unitary matrices (U, V*) and a rectangular diagonal matrix of singular values (S).
@@ -54,18 +49,18 @@ One must take care to preprocess the input data appropriately.
 7. The PCs can be determined via eigen decomposition of the covariance matrix Σ. After all, the geometrical meaning of eigen decomposition is to find a new coordinate system of the eigenvectors for Σ through rotations.
 
 
-**Task 6: Singular Value Decomposition (SVD)**
+**Task 5: Singular Value Decomposition (SVD)**
 
 1. Singular Value Decomposition or SVD is a computationally efficient method to perform PCA.
 2. It decomposes a matrix into the product of two unitary matrices (U, V*) and a rectangular diagonal matrix of singular values (S). The mathematics of computing the SVD is a little complicated and out of the scope of this project.
 
 
-**Task 7: Selecting Principal Components Using the Explained Variance**
+**Task 6: Selecting Principal Components Using the Explained Variance**
 
 1. The use of PCA means that the projected data can be analyzed along axes of principal variation.
 2. Plot the cumulative explained variance against the number of principal components.
 3. Rank components according to the explained variance each component contributes to the model.
 
 
-**Task 8: Project Data Onto Lower-Dimensional Linear Subspace**
+**Task 7: Project Data Onto Lower-Dimensional Linear Subspace**
 Utilize principal component analysis to decompose high dimensional data into two or three dimensions so that each instance can be plotted in a scatter plot.
